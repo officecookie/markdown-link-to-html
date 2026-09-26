@@ -32,8 +32,7 @@ public class MarkdownToHtml {
                 if (markdown.trim().isEmpty())
                     throw new Exception("Введена пустая строка!");
 
-                String regex =
-                        "(?<!\\!)\\[([^\\]]+)\\]\\((https?://(?:www\\.)?[a-zA-Z0-9-]+\\.[a-zA-Z]{2,}(?:/[^\\)]*)?)\\)";
+                String regex = "(?<!\\!)\\[([^\\]]+)\\]\\((https?://(?:www\\.)?[a-zA-Z0-9-]+\\.[a-zA-Z]{2,}(?:/[^\\)]*)?)\\)";
 
                 Pattern pattern = Pattern.compile(regex);
 
